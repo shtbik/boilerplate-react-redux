@@ -1,0 +1,13 @@
+{
+	"presets": ["react", "env"],
+	"plugins": [
+		"react-hot-loader/babel",
+		"flow-react-proptypes",
+		"transform-function-bind",
+		"transform-class-properties",
+		"transform-decorators",
+		"transform-object-rest-spread",
+		["import", { "libraryName": "antd" }],
+		["lodash", { "id": ["lodash", "recompose"] }]
+	]
+}

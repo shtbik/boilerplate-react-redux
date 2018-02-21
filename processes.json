@@ -1,0 +1,16 @@
+{
+	"apps": [
+		{
+			"name": "ui",
+			"script": "index.js",
+			"log_date_format": "YYYY-MM-DD HH:mm Z",
+			"watch": ["./index.js", ".src/"],
+			"max_restarts": 1,
+			"log_file": "../logs/ui.log",
+			"error_file": "../logs/ui.log",
+			"out_file": "../logs/ui.log",
+			"pid_file": "../logs/ui.pid",
+			"exec_interpreter": "node"
+		}
+	]
+}

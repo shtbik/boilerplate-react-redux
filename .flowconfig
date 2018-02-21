@@ -1,0 +1,34 @@
+[ignore]
+.*/node_modules/draft-js/.*
+.*/node_modules/react-draft-wysiwyg/.*
+.*/node_modules/documentation/.*
+.*/node_modules/.cache.*
+
+[include]
+
+[libs]
+
+[options]
+unsafe.enable_getters_and_setters=true
+
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
+module.system.node.resolve_dirname=src/components
+module.system.node.resolve_dirname=src/containers
+module.system.node.resolve_dirname=src/constants
+module.system.node.resolve_dirname=src/middleware
+module.system.node.resolve_dirname=src/modules
+module.system.node.resolve_dirname=src/routes
+module.system.node.resolve_dirname=src/selectors
+module.system.node.resolve_dirname=src/store
+module.system.node.resolve_dirname=src/helpers
+module.system.node.resolve_dirname=src/styles
+module.system.node.resolve_dirname=src/styles/less
+module.system.node.resolve_dirname=src/styles/scss
+module.system.node.resolve_dirname=src/mocks
+
+module.name_mapper='.*\(.css\)' -> 'lodash/noop'
+module.name_mapper='.*\(.scss\)' -> 'lodash/noop'
+module.name_mapper='.*\(.less\)' -> 'lodash/noop'
+
+[lints]
