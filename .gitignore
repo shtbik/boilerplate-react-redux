@@ -3,6 +3,9 @@ npm-debug.*
 static/*hot-update*
 static/*bundle*
 static/meta.json
+static/index.html
+static/css/entry*
+static/css/vendor*
 
 ### macOS ###
 *.DS_Store
@@ -30,3 +33,6 @@ Temporary Items
 .apdisk
 yarn-error.log
 .idea
+stats.json
+
+static

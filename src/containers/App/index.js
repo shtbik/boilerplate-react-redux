@@ -3,6 +3,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Switch, Route, NavLink } from 'react-router-dom'
+import { hot } from 'react-hot-loader'
 import { Layout, Menu, Breadcrumb, Icon } from 'antd'
 import { app as appRoutes } from 'routes'
 import { modules } from 'modules'
@@ -143,4 +144,4 @@ const mapStateToProps = (state, ownProps) => ({
 	ns: _.camelCase(ownProps.location.pathname) || 'mainPage',
 })
 
-export default connect(mapStateToProps)(App)
+export default hot(module)(connect(mapStateToProps)(App))

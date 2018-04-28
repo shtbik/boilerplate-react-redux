@@ -1,9 +1,9 @@
-import { persistStore } from 'redux-persist/lib'
+import { persistStore } from 'redux-persist'
 
 import configureStore from './configureStore'
 import history from './history'
 
 const store = configureStore({})
-persistStore(store, { keyPrefix: 'cssm_', whitelist: ['auth'] })
+const persistor = persistStore(store)
 
-export { store, history }
+export { store, history, persistor }
