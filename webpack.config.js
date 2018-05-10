@@ -93,7 +93,7 @@ module.exports = {
 		minimizer,
 	},
 
-	entry: './src/index.js',
+	entry: ['babel-polyfill', './src/index.js'],
 
 	devServer: {
 		publicPath: '/',
