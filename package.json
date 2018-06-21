@@ -9,13 +9,13 @@
 		"Redux Pack",
 		"Flow",
 		"ESlint",
-		"Redux Persist",
-		"React Cookie"
+		"Redux Persist"
 	],
 	"scripts": {
 		"start": "cross-env NODE_ENV=inline webpack-dev-server",
 		"start:noinline": "webpack-dev-server",
 		"start:prod": "cross-env NODE_ENV=production webpack-dev-server",
+		"start:ip": "cross-env NODE_ENV=inline webpack-dev-server —host xxx.xxx.x.xx",
 		"webpack:prod": "cross-env NODE_ENV=production webpack --progress --colors",
 		"build": "yarn webpack:prod",
 		"stats": "cross-env NODE_ENV=production webpack --profile --json > stats.json",
